@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author JOAOPAULO
  */
-public class task {
+public class Task {
     
     private int id;
     private int idProject;
@@ -22,7 +22,7 @@ public class task {
     private Date createdAt;
     private Date updatedAt;
 
-    public task(int id, int idProject, String name, String description, String notes, boolean isCompleted, Date deadline, Date createdAt, Date updatedAt) {
+    public Task(int id, int idProject, String name, String description, String notes, boolean isCompleted, Date deadline, Date createdAt, Date updatedAt) {
         this.id = id;
         this.idProject = idProject;
         this.name = name;
@@ -32,6 +32,10 @@ public class task {
         this.deadline = deadline;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+    }
+    
+    public Task(){
+        this.createdAt = new Date();
     }
 
     public int getId() {
