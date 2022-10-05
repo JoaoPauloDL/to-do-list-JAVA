@@ -3,12 +3,20 @@
  */
 package todoApp;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import controller.ProjectController;
+import model.Project;
 
+public class App {
+   
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        
+        ProjectController pc = new ProjectController();
+        
+        Project project = new Project();
+        
+        project.setName("teste");
+        project.setDescription("description");
+        pc.save(project);
+        
     }
 }
