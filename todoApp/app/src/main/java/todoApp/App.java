@@ -10,13 +10,24 @@ public class App {
    
     public static void main(String[] args) {
         
+        //ProjectController pc = new ProjectController();
+        
+        //Project project = new Project();
+        
+        //project.setName("teste");
+        //project.setDescription("description");
+        //pc.save(project);
+        
         ProjectController pc = new ProjectController();
         
         Project project = new Project();
-        
-        project.setName("teste");
+        project.setId(1);
+        project.setName("nome alterado");
         project.setDescription("description");
-        pc.save(project);
+        
+        
+      
+        pc.update(project);
         
     }
 }
