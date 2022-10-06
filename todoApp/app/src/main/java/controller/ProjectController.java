@@ -100,7 +100,7 @@ public class ProjectController {
         
     }
       
-     public List<Project> getAll(int idProject){
+     public List<Project> getAll(){
         String sql = "SELECT *FROM projects";
         
         Connection connection = null;
@@ -113,8 +113,7 @@ public class ProjectController {
         try {
             connection = ConnectionFactory.getConnection();
             statement = connection.prepareStatement(sql);
-            //setando o valor que corresponde ao filtro de busca
-            statement.setInt(1, idProject);
+           
             //valor retornado pela execução da query
             resultSet = statement.executeQuery();
             
