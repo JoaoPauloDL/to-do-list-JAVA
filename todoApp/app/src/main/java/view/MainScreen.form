@@ -111,8 +111,8 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jPanel5" pref="175" max="32767" attributes="0"/>
-                      <Component id="jPanel3" max="32767" attributes="0"/>
+                      <Component id="jPanel5" pref="178" max="32767" attributes="0"/>
+                      <Component id="jPanel3" pref="178" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -128,12 +128,12 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jPanel3" pref="49" max="32767" attributes="0"/>
+                      <Component id="jPanel3" pref="56" max="32767" attributes="0"/>
                       <Component id="jPanel4" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jPanel5" max="32767" attributes="0"/>
+                      <Component id="jPanel5" pref="315" max="32767" attributes="0"/>
                       <Component id="jPanel6" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -170,7 +170,9 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" pref="102" max="-2" attributes="0"/>
-                      <EmptySpace pref="61" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel7" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -178,7 +180,13 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel7" max="32767" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabel3" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -191,12 +199,17 @@
                   <Color blue="34" green="1c" red="14" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="18" style="0"/>
+                  <Font name="Segoe UI" size="18" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="34" green="1c" red="14" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Projetos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel7"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -226,15 +239,20 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel4" min="-2" pref="88" max="-2" attributes="0"/>
-                      <EmptySpace pref="361" max="32767" attributes="0"/>
+                      <EmptySpace pref="312" max="32767" attributes="0"/>
+                      <Component id="jLabel6" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel4" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel4" max="32767" attributes="0"/>
+                          <Component id="jLabel6" max="32767" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -247,12 +265,17 @@
                   <Color blue="34" green="1c" red="14" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="18" style="0"/>
+                  <Font name="Segoe UI" size="18" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Tarefas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel6"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -287,7 +310,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="322" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="315" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -296,18 +319,6 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
-                <CompoundBorder>
-                  <Border PropertyName="outside" info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
-                    <CompoundBorder/>
-                  </Border>
-                  <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.CompoundBorderInfo">
-                    <CompoundBorder/>
-                  </Border>
-                </CompoundBorder>
-              </Border>
             </Property>
           </Properties>
 
