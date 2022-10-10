@@ -12,29 +12,29 @@ public class App {
    
     public static void main(String[] args) throws SQLException {
         
-        //ProjectController pc = new ProjectController();
-        
-        //Project project = new Project();
-        
-        //project.setName("teste");
-        //project.setDescription("description");
-        //pc.save(project);
-        
         ProjectController pc = new ProjectController();
         
         Project project = new Project();
-        project.setId(1);
-        project.setName("nome alterado");
+        
+        project.setName("teste");
         project.setDescription("description");
+        pc.save(project);
+        
+        //ProjectController pc = new ProjectController();
+        
+        //Project project = new Project();
+        //project.setId(1);
+        //project.setName("nome alterado");
+        //project.setDescription("description");
         
         
       
-        pc.update(project);
+        //pc.update(project);
         
-        List<Project>  projects = pc.getAll();
-        System.out.println("total de projetos = " + projects.size());
+        //List<Project>  projects = pc.getAll();
+        //System.out.println("total de projetos = " + projects.size());
        
-       pc.removeById(1);
+       //pc.removeById(1);
         
     }
 }
