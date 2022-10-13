@@ -299,6 +299,9 @@
                   <Dimension value="[63, 22]"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelProjectsAddMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
