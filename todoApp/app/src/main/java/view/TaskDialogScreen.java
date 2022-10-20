@@ -55,6 +55,11 @@ public class TaskDialogScreen extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanelToolbar.setBackground(new java.awt.Color(20, 28, 50));
+        jPanelToolbar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanelToolbarMouseClicked(evt);
+            }
+        });
 
         jLabelToolbarTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabelToolbarTitle.setText("Tarefa");
@@ -211,28 +216,37 @@ public class TaskDialogScreen extends javax.swing.JDialog {
     private void jLabelSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelSaveMouseClicked
         // TODO add your handling code here:
         try {
-            Task task = new Task();
-            task.setIdProject(project.getId());
-            task.setName(jTextFieldName.getText());
-            task.setDescription(jTextAreaDescription.getText());
-            task.setNotes(jTextAreaNotes.getText());
-            task.setIsCompleted(false);
-            
-            SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-            Date deadline = null;
-            
-            deadline = dateFormat.parse(jFormattedTextFieldDeadline.getText());
-            task.setDeadline(deadline);
-            
-            controller.save(task);
-            
-            JOptionPane.showMessageDialog(rootPane, "Tarefa salva com sucesso!");
+            if(jTextFieldName.getText().isEmpty() || jFormattedTextFieldDeadline.getText().isEmpty()){
+                JOptionPane.showMessageDialog(rootPane, "Cadastro não concluído, existem campos obrigatórios a serem concluídos");
+            }else{
+                Task task = new Task();
+                task.setIdProject(project.getId());
+                task.setName(jTextFieldName.getText());
+                task.setDescription(jTextAreaDescription.getText());
+                task.setNotes(jTextAreaNotes.getText());
+                task.setIsCompleted(false);
+
+                SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                Date deadline = null;
+
+                deadline = dateFormat.parse(jFormattedTextFieldDeadline.getText());
+                task.setDeadline(deadline);
+
+                controller.save(task);
+
+                JOptionPane.showMessageDialog(rootPane, "Tarefa salva com sucesso!");
+                this.dispose();
+            }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(rootPane, e.getMessage());
         }
-        this.dispose();
+        
         
     }//GEN-LAST:event_jLabelSaveMouseClicked
+
+    private void jPanelToolbarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanelToolbarMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelToolbarMouseClicked
 
     /**
      * @param args the command line arguments

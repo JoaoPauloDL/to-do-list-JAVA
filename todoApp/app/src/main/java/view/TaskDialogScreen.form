@@ -44,6 +44,9 @@
           <Color blue="32" green="1c" red="14" type="rgb"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanelToolbarMouseClicked"/>
+      </Events>
 
       <Layout>
         <DimensionLayout dim="0">
