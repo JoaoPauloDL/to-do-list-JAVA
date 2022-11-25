@@ -1,2 +1,2 @@
 # to-do-list-JAVA
-to-do list app made with Java and Swing
+to-do list application made with Java and Swing during START By Capgemini program training
